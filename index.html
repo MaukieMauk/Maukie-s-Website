@@ -1,0 +1,296 @@
+<!-- Start of Maukie's Cyber-Modern Page -->
+<style>
+    /* ===== Global ===== */
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #0d0d0f;
+        color: #e0e0e0;
+        scroll-behavior: smooth;
+        overflow-x: hidden
+    }
+
+    a {
+        text-decoration: none;
+        transition: .3s
+    }
+
+    h1,
+    h2 {
+        font-weight: 800;
+        letter-spacing: 1px
+    }
+
+    /* ===== Sections ===== */
+    section {
+        padding: 4rem 2rem;
+        max-width: 1000px;
+        margin: 3rem auto;
+        border-radius: 20px;
+        backdrop-filter: blur(12px);
+        background: rgba(15, 15, 20, .5);
+        box-shadow: 0 8px 25px rgba(0, 255, 255, .1);
+        transition: transform .4s, box-shadow .4s;
+        position: relative;
+        overflow: hidden
+    }
+
+    section:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 255, 255, .3)
+    }
+
+    /* ===== Headings ===== */
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        background: linear-gradient(90deg, #00f0ff, #ff00f0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1rem;
+        text-shadow: 0 0 20px rgba(0, 255, 255, .5), 0 0 40px rgba(255, 0, 255, .3)
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #00f0ff;
+        position: relative
+    }
+
+    h2::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: #ff00f0;
+        margin-top: .5rem;
+        border-radius: 2px
+    }
+
+    /* ===== Text ===== */
+    p,
+    ul {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        z-index: 1
+    }
+
+    ul {
+        margin-left: 1.2rem
+    }
+
+    li {
+        margin-bottom: .5rem
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+        display: inline-block;
+        padding: .8rem 2rem;
+        margin: .3rem;
+        background: linear-gradient(135deg, #00f0ff, #ff00f0);
+        color: #fff;
+        font-weight: 700;
+        font-size: 1rem;
+        border-radius: 15px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        transition: .4s;
+        box-shadow: 0 0 15px rgba(0, 255, 255, .6), 0 0 25px rgba(255, 0, 255, .4)
+    }
+
+    .btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -120%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .2);
+        transform: skewX(-20deg);
+        transition: .5s
+    }
+
+    .btn:hover::before {
+        left: 220%
+    }
+
+    .btn:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 25px rgba(0, 255, 255, .8), 0 0 35px rgba(255, 0, 255, .6);
+        background: linear-gradient(135deg, #ff00f0, #00f0ff)
+    }
+
+    /* ===== Layout ===== */
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem
+    }
+
+    .contact li a {
+        color: #00f0ff;
+        font-weight: 500;
+        transition: .3s
+    }
+
+    .contact li a:hover {
+        color: #ff00f0
+    }
+
+    /* ===== Media ===== */
+    .banner {
+        width: 100%;
+        border-radius: 20px;
+        margin-top: 1rem;
+        box-shadow: 0 0 20px rgba(0, 255, 255, .2)
+    }
+
+    .logo {
+        display: block;
+        width: 120px;
+        margin: 1rem auto
+    }
+
+    .vibe-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem
+    }
+
+    .vibe-images img {
+        width: 200px;
+        border-radius: 15px;
+        transition: transform .5s, box-shadow .5s;
+        filter: drop-shadow(0 0 10px #00f0ff)
+    }
+
+    .vibe-images img:hover {
+        transform: scale(1.08) rotate(1deg);
+        box-shadow: 0 0 30px rgba(255, 0, 255, .6)
+    }
+
+    /* ===== Footer ===== */
+    footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: .9rem;
+        color: #888
+    }
+
+    /* ===== Responsive ===== */
+    @media(max-width:768px) {
+        h1 {
+            font-size: 2.5rem
+        }
+
+        h2 {
+            font-size: 1.8rem
+        }
+
+        .btn {
+            padding: .6rem 1.5rem;
+            font-size: .95rem
+        }
+
+        .vibe-images img {
+            width: 45%
+        }
+    }
+
+    @media(max-width:480px) {
+        h1 {
+            font-size: 2rem
+        }
+
+        h2 {
+            font-size: 1.5rem
+        }
+
+        section {
+            padding: 3rem 1rem
+        }
+
+        .vibe-images img {
+            width: 90%
+        }
+    }
+</style>
+
+
+<!-- Hero Section -->
+<section> <img src="https://cdn.discordapp.com/attachments/1448594427726794965/1448615228882550894/1vHpoqW.png?ex=696b5d90&is=696a0c10&hm=cdbaf2eea81fb7ba16df4b230d634999f76099f5eb0d2965be15df02b68fd0f9&animated=true" alt="Logo" class="logo">
+    <h1>Maukie</h1>
+    <p style="text-align:center; font-size:1.2rem; color:#ccc;"> 15-year-old creator from the Netherlands, Graphics Design | Roblox | Roleplay Communities | Coding </p>
+    <div class="links"> <a href="https://discord.gg/ZenjSqGgHs" target="_blank" class="btn">Maukie's Designs</a> <a href="https://sites.google.com/view/maukie-portfolio" target="_blank" class="btn">Development Portfolio</a> <a href="https://erlcx.com/profile/2629926396" target="_blank" class="btn">ERLC X Profile</a> <a href="https://www.youtube.com/channel/UC1SEha4y8Ccb6DbOqpUiQTA?sub_confirmation=1" target="_blank" class="btn">YouTube Channel</a> </div>
+</section> <!-- Vibe Showcase -->
+<section>
+    <h2>Showcase</h2>
+    <div class="vibe-images"> <img src="https://drive.google.com/file/d/1_nhtrKFLE-yF1CBs4sYDoFaIIJ7eeBxS" alt="Summery Vibe"> <img src="https://media.discordapp.net/attachments/1317414731232837712/1461801158862569555/Wrapped_Car_4.png?ex=696bdfeb&is=696a8e6b&hm=bf90c9b594bf6d4d0f0d09ac3f169ac53f1ee65ce03d911925618aa1b46c70e1&animated=true" alt="Cool Vibe"> <img src="https://media.discordapp.net/attachments/1317414731232837712/1461801159902888170/Wrapped_Car_3.png?ex=696bdfeb&is=696a8e6b&hm=4252cd2024a1b82ef34ac85242afed61f4b78c09ccb5b8f7a2aaca2ffbbeb9c1&animated=true" alt="Chill Vibe"> <img src="https://cdn.discordapp.com/attachments/1317414731232837712/1461801383161368761/1767457071661-2wftri-Red.png?ex=696be020&is=696a8ea0&hm=e73f822cb14e100b7f17b75e588858c64e16ccd8476ec9dd97cfb2d2cbd7b596&animated=true" alt="Car on a Hill Vibe"> </div>
+</section> <!-- About Me -->
+<section>
+    <h2>Intro</h2>
+    <p>I’m a 15-year-old creator from the Netherlands, focused on livery design, Roblox development, and roleplay communities. I enjoy building creative projects and contributing to teams that value quality and collaboration.</p>
+    <h2>About Me</h2>
+    <p>A large part of what I do revolves around online communities, roleplay projects, and creative work. I’m involved in designing visual content such as liveries and assets, participating in testing and feedback processes, and supporting projects behind the scenes. I enjoy working both independently and as part of a team, especially in environments where creativity and collaboration come together.</p>
+    <p>Over time, I’ve been part of various projects and groups across different platforms, mainly focused on design, roleplay, media, and community involvement. These experiences have helped me understand how teams work, how ideas develop, and how projects grow through cooperation and consistency.</p>
+</section> <!-- Interests -->
+<section>
+    <h2>Interests</h2>
+    <ul>
+        <li>Roleplay</li>
+        <li>Graphic Design</li>
+        <li>Scripting (Roblox Studio)</li>
+        <li>Computers</li>
+        <li>Creative Projects</li>
+        <li>Livery Design (ER:LC)</li>
+        <li>Playing football</li>
+    </ul>
+</section> <!-- Projects & Communities -->
+<section>
+    <h2>Projects & Communities</h2>
+    <ul>
+        <li>Owner @ Maukie's Designs</li>
+        <li>Owner @ The Netherlands Roleplay</li>
+        <li>Top Creator @ ERLCX</li>
+        <li>QA Tester @ ERLCX</li>
+        <li>Grafisch Formgever I.O. @ LeagueFM</li>
+        <li>Member @ OMB Productions</li>
+        <li>Recording Team @ On Patrol</li>
+        <li>Recording Crew @ AmazePlayz</li>
+        <li>Civilian 1 @ OpenWorld</li>
+    </ul>
+</section>
+
+<!-- What I Enjoy -->
+<section>
+    <h2>What I Enjoy</h2>
+    <ul>
+        <li>Creative and visual projects</li>
+        <li>Learning through real experience</li>
+        <li>Improving and refining ideas over time</li>
+    </ul>
+</section>
+
+<!-- Contact & Socials -->
+<section>
+    <h2>Contact & Links</h2>
+    <ul class="contact">
+        <li>Roblox: <a href="https://www.roblox.com/users/2629926396/profile" target="_blank">@MaukieMauk</a></li>
+        <li>ERLC X: <a href="https://erlcx.com/profile/2629926396" target="_blank">@MaukieMauk</a></li>
+        <li>Discord: <a href="https://www.google.com/url?q=https%3A%2F%2Fdiscord.com%2Fusers%2F1060978901716844634&sa=D&sntz=1&usg=AOvVaw37q-F53dnByMSmSHUmRQRZ" target="_blank">@MaukieMauk</a></li>
+        <li>YouTube: <a href="https://www.youtube.com/channel/UC1SEha4y8Ccb6DbOqpUiQTA?sub_confirmation=1" target="_blank">@Maukie</a></li>
+        <li>X (Twitter): <a href="https://x.com/XMaukieMauk" target="_blank">@XMaukieMauk</a></li>
+    </ul>
+</section> <!-- Footer Quick Links -->
+<section>
+    <h2>Quick Links</h2>
+    <div class="links"> <a href="https://discord.gg/ZenjSqGgHs" target="_blank" class="btn">Maukie's Designs</a> <a href="https://sites.google.com/view/maukie-portfolio" target="_blank" class="btn">The Netherlands Roleplay</a> <a href="https://erlcx.com/profile/2629926396" target="_blank" class="btn">ERLCX Profile</a> <a href="https://www.youtube.com/channel/UC1SEha4y8Ccb6DbOqpUiQTA?sub_confirmation=1" target="_blank" class="btn">YouTube Channel</a> <a href="https://www.roblox.com/games/2534724415/" target="_blank" class="btn">Emergency Response: Liberty County</a> </div>
+</section>
+<footer> &copy; 2026 Maukie | All content belongs to Maukie <img src="https://cdn.discordapp.com/attachments/1448594427726794965/1460296203286872307/Banner.png?ex=696bac51&is=696a5ad1&hm=e1bacd1b6da313720fecf67fe50442c3963e51a1ed06e81663145b300e9f663c&animated=true" alt="Banner" class="banner"> </footer> <!-- End of Maukie's Informative Page -->
