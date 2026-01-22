@@ -1,4 +1,4 @@
-# 🌐 Maukie — Source Code
+# 🌐 Maukie | Source Code
 
 Welcome to the source code of my personal page.
 
